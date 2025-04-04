@@ -1,0 +1,106 @@
+{
+    "date": "4/3/2025, 4:03:40 PM",
+    "url": "http://localhost:3000",
+    "issuesFound": 0,
+    "details": [
+        {
+            "type": "Border",
+            "colorValue": "rgb(221, 221, 221)",
+            "textContent": "Card Title\n\nCard Subtitle\n\nAction 1\n\nAction 2",
+            "tagHierarchy": "html > body > div > div > div > div > div"
+        },
+        {
+            "type": "Text",
+            "colorValue": "rgba(0, 0, 0, 0.737)",
+            "textContent": "Card Subtitle",
+            "tagHierarchy": "html > body > div > div > div > div > div > div > div > div > p"
+        },
+        {
+            "type": "Border",
+            "colorValue": "rgba(0, 0, 0, 0.737)",
+            "textContent": "Card Subtitle",
+            "tagHierarchy": "html > body > div > div > div > div > div > div > div > div > p"
+        },
+        {
+            "type": "Border",
+            "colorValue": "rgb(221, 221, 221)",
+            "textContent": "Card Title\n\nCard Subtitle\n\nAction 1\n\nAction 2",
+            "tagHierarchy": "html > body > div > div > div > div > div"
+        },
+        {
+            "type": "Text",
+            "colorValue": "rgba(0, 0, 0, 0.737)",
+            "textContent": "Card Subtitle",
+            "tagHierarchy": "html > body > div > div > div > div > div > div > div > div > p"
+        },
+        {
+            "type": "Border",
+            "colorValue": "rgba(0, 0, 0, 0.737)",
+            "textContent": "Card Subtitle",
+            "tagHierarchy": "html > body > div > div > div > div > div > div > div > div > p"
+        },
+        {
+            "type": "Background",
+            "colorValue": "rgba(209, 95, 253, 0.4)",
+            "textContent": "Card Title\n\nCard Subtitle\n\nAction 1\n\nAction 2",
+            "tagHierarchy": "html > body > div > div > div > div > div"
+        },
+        {
+            "type": "Border",
+            "colorValue": "rgb(221, 221, 221)",
+            "textContent": "Card Title\n\nCard Subtitle\n\nAction 1\n\nAction 2",
+            "tagHierarchy": "html > body > div > div > div > div > div"
+        },
+        {
+            "type": "Background",
+            "colorValue": "rgba(209, 95, 253, 0.4)",
+            "textContent": "Card Subtitle",
+            "tagHierarchy": "html > body > div > div > div > div > div > div > div > div > p"
+        },
+        {
+            "type": "Text",
+            "colorValue": "rgba(0, 0, 0, 0.737)",
+            "textContent": "Card Subtitle",
+            "tagHierarchy": "html > body > div > div > div > div > div > div > div > div > p"
+        },
+        {
+            "type": "Border",
+            "colorValue": "rgba(0, 0, 0, 0.737)",
+            "textContent": "Card Subtitle",
+            "tagHierarchy": "html > body > div > div > div > div > div > div > div > div > p"
+        },
+        {
+            "type": "Background",
+            "colorValue": "rgba(209, 95, 253, 0.4)",
+            "textContent": "Card Title\n\nCard Subtitle\n\nAction 1\n\nAction 2",
+            "tagHierarchy": "html > body > div > div > div > div > div"
+        },
+        {
+            "type": "Border",
+            "colorValue": "rgb(221, 221, 221)",
+            "textContent": "Card Title\n\nCard Subtitle\n\nAction 1\n\nAction 2",
+            "tagHierarchy": "html > body > div > div > div > div > div"
+        },
+        {
+            "type": "Background",
+            "colorValue": "rgba(209, 95, 253, 0.4)",
+            "textContent": "Card Subtitle",
+            "tagHierarchy": "html > body > div > div > div > div > div > div > div > div > p"
+        },
+        {
+            "type": "Text",
+            "colorValue": "rgba(0, 0, 0, 0.737)",
+            "textContent": "Card Subtitle",
+            "tagHierarchy": "html > body > div > div > div > div > div > div > div > div > p"
+        },
+        {
+            "type": "Border",
+            "colorValue": "rgba(0, 0, 0, 0.737)",
+            "textContent": "Card Subtitle",
+            "tagHierarchy": "html > body > div > div > div > div > div > div > div > div > p"
+        }
+    ]
+}
+
+
+
