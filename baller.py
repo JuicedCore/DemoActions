@@ -47,15 +47,15 @@ def validate_json(font_data, color_data, case_data):
 
 def main():
     try:
-        with open('prototype/api/compliance_report/font_report.json', 'r') as f:
+        with open('api/compliance_report/font_report.json', 'r') as f:
             font_data = json.load(f)
 
 
-        with open('prototype/api/compliance_report/color_report.json', 'r') as f:
+        with open('api/compliance_report/color_report.json', 'r') as f:
             color_data = json.load(f)
 
 
-        with open('prototype/api/compliance_report/case_report.json', 'r') as f:
+        with open('api/compliance_report/case_report.json', 'r') as f:
             case_data = json.load(f)
 
 
