@@ -23,12 +23,15 @@ jobs:
 
     - name: Run baller.py and validate output
       run: |
+        echo "Running baller.py..."
         output=$(python baller.py)
-        echo "test Result: $output"
+        echo "🔍 Test Result: $output"
         expected="All JSON validations passed. 🔥🔥🔥"
 
         if [[ "$output" != "$expected" ]]; then
-          echo "❌ Output does not match expected."
+          echo "::error title=Baller Validation Failed::❌ Output did not match expected."
+          echo "::error::Expected: \"$expected\""
+          echo "::error::Got:      \"$output\""
           exit 1
         fi
 
