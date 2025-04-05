@@ -61,15 +61,16 @@ def main():
 
         if validate_json(font_data, color_data, case_data):
             print("All JSON validations passed. 🔥🔥🔥")
+            return("All JSON validations passed. 🔥🔥🔥")
         else:
             exit(1) # Indicate validation failure.
-
+            
 
     except FileNotFoundError as e:
-        print(f"Error: File not found - {e}")
+        return(f"Error: File not found - {e}")
         exit(1)
     except json.JSONDecodeError as e:
-        print(f"Error: Invalid JSON format - {e}")
+        return (f"Error: Invalid JSON format - {e}")
         exit(1)
 
 
