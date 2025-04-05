@@ -3,7 +3,7 @@
         "component": "button",
         "text": "Contact Us",
         "case": "Mixed case",
-        "is_valid": flase
+        "is_valid": false
     }
 ]
 
