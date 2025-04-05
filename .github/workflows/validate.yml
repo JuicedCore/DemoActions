@@ -24,8 +24,15 @@ jobs:
     - name: Run baller.py and validate output
       run: |
         echo "Running baller.py..."
-        output=$(python baller.py)
-        echo "🔍 Test Result: $output"
+        
+        # Capture both stdout and stderr from baller.py
+        output=$(python baller.py 2>&1)
+        exit_code=$?
+
+        echo "🔍 Test Result:"
+        echo "$output"
+        echo "🔚 Exit Code: $exit_code"
+
         expected="All JSON validations passed. 🔥🔥🔥"
 
         if [[ "$output" != "$expected" ]]; then
