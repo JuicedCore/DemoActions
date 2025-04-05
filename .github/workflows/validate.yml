@@ -1,0 +1,35 @@
+name: Validate baller.py Output
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+
+    - name: Run baller.py and validate output
+      run: |
+        output=$(python baller.py)
+        echo "test Result: $output"
+        expected="All JSON validations passed. 🔥🔥🔥"
+
+        if [[ "$output" != "$expected" ]]; then
+          echo "❌ Output does not match expected."
+          exit 1
+        fi
+
+        echo "✅ Output matched expected."
