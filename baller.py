@@ -21,23 +21,23 @@ def validate_json(font_data, color_data, case_data):
 
     valid = True
 
-
+    message = ""
     # Validate font_report.json
     if font_data["issuesFound"] != 0:
-        print(f"Validation failed: font_report.json issuesFound is {font_data['issuesFound']}, expected 0.")
+        massage+=f"Validation failed: font_report.json issuesFound is {font_data['issuesFound']}, expected 0."
         valid = False
 
 
     # Validate color_report.json
     if color_data["issuesFound"] != 0:
-        print(f"Validation failed: color_report.json issuesFound is {color_data['issuesFound']}, expected 0.")
+        message+=f"Validation failed: color_report.json issuesFound is {color_data['issuesFound']}, expected 0."
         valid = False
 
 
     # Validate case_report.json
     for item in case_data:
         if item["is_valid"] != True:
-            print(f"Validation failed: case_report.json component '{item['component']}' is_valid is {item['is_valid']}, expected True.")
+            message+=f"Validation failed: case_report.json component '{item['component']}' is_valid is {item['is_valid']}, expected True."
             valid = False
             break
 
@@ -63,7 +63,8 @@ def main():
             print("All JSON validations passed. 🔥🔥🔥")
             return("All JSON validations passed. 🔥🔥🔥")
         else:
-            exit(1) # Indicate validation failure.
+            return(f"Failed because: {message}")
+             # Indicate validation failure.
             
 
     except FileNotFoundError as e:
